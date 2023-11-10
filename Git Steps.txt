@@ -116,3 +116,43 @@ Go to your GitHub repository in a web browser (https://github.com/arshadrayyan/S
 Now, your Android Studio project should be added to your GitHub repository. You can continue to push updates using the same process whenever you make changes to your project.
 
 Remember to keep sensitive information out of version control and update your .gitignore file accordingly.
+
+If you want to use your Git repository on another system, you need to follow these steps:
+
+Step 1: Install Git on the New System
+Make sure Git is installed on the new system. You can download it from git-scm.com. During installation, choose the option to add Git to the system PATH.
+
+Step 2: Clone the Repository
+On the new system, open a terminal or command prompt and navigate to the directory where you want to clone the repository. Use the following command to clone your repository:
+
+bash
+Copy code
+git clone https://github.com/arshadrayyan/SunPharma.git
+Replace the URL with the URL of your repository. This command downloads a copy of the repository to the new system.
+
+Step 3: Configure Git Identity
+Configure your Git identity on the new system. Open a terminal and run the following commands:
+
+bash
+Copy code
+git config --global user.name "Your Name"
+git config --global user.email "your.email@example.com"
+Replace "Your Name" and "your.email@example.com" with your actual name and email associated with your GitHub account.
+
+Step 4: Make Changes and Push
+Now you can make changes to your project on the new system. After making changes, use the following commands to commit and push your changes to GitHub:
+
+bash
+Copy code
+git add .
+git commit -m "Your commit message"
+git push
+Step 5: Pull Changes (Optional)
+If you've made changes on the original system and want to get those changes on the new system, navigate to your project directory in the terminal and run:
+
+bash
+Copy code
+git pull
+This command fetches changes from the remote repository and merges them into your local branch.
+
+Now, your project is set up on the new system, and you can work with it just like you did on the original system. Remember to pull changes before you start working on new features or fixing bugs to ensure that you have the latest version of the code.
