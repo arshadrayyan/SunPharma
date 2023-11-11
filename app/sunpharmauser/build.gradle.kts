@@ -4,12 +4,12 @@ plugins {
 
 android {
     namespace = "com.hospital.sunpharmauser"
-    compileSdk = 29
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.hospital.sunpharmauser"
         minSdk = 24
-        targetSdk = 29
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 

@@ -156,3 +156,37 @@ git pull
 This command fetches changes from the remote repository and merges them into your local branch.
 
 Now, your project is set up on the new system, and you can work with it just like you did on the original system. Remember to pull changes before you start working on new features or fixing bugs to ensure that you have the latest version of the code.
+
+The error message indicates that the remote branch (master in this case) has changes that you don't have locally. This is a safety feature to prevent you from accidentally overwriting changes on the remote repository.
+
+To resolve this, you need to pull the changes from the remote repository before you can push your changes. Here are the steps you can follow:
+
+bash
+Copy code
+# Navigate to your project directory
+cd /path/to/your/project
+
+# Fetch the changes from the remote repository
+git fetch origin
+
+# Merge the changes into your local branch
+git merge origin/master
+
+# Resolve any merge conflicts if there are any
+# After resolving conflicts, add the files and commit the changes
+
+# Now you can push your changes
+git push origin master
+If you want to combine the fetch and merge steps into a single step, you can use the git pull command:
+
+bash
+Copy code
+# This will fetch and merge changes from the remote repository
+git pull origin master
+
+# Resolve any merge conflicts if there are any
+# After resolving conflicts, add the files and commit the changes
+
+# Now you can push your changes
+git push origin master
+These commands ensure that your local branch is up-to-date with the changes from the remote repository before you push your changes. If you encounter merge conflicts during the pull, you'll need to resolve them before you can continue.
