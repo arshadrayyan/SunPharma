@@ -2,15 +2,17 @@ package com.hospital.sunpharmaadmin;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
+import android.view.WindowManager;
 
-public class MainActivity extends AppCompatActivity {
+public class SplashActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
 
         // on below line we are configuring our window to full screen
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
@@ -25,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
             public void run() {
                 // on below line we are
                 // creating a new intent
-                Intent i = new Intent(MainActivity.this, MainActivity2.class);
+                Intent i = new Intent(SplashActivity.this, RegisterActivity.class);
 
                 // on below line we are
                 // starting a new activity.

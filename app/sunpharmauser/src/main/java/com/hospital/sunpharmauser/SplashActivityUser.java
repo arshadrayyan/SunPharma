@@ -2,9 +2,12 @@ package com.hospital.sunpharmauser;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
+import android.view.WindowManager;
 
-public class MainActivityUser extends AppCompatActivity {
+public class SplashActivityUser extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,7 +19,7 @@ public class MainActivityUser extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main_user);
 
         // on below line we are calling handler to run a task
         // for specific time interval
@@ -25,7 +28,7 @@ public class MainActivityUser extends AppCompatActivity {
             public void run() {
                 // on below line we are
                 // creating a new intent
-                Intent i = new Intent(MainActivity.this, MainActivity2.class);
+                Intent i = new Intent(SplashActivityUser.this, RegisterActivityUser.class);
 
                 // on below line we are
                 // starting a new activity.
