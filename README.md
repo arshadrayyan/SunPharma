@@ -1,5 +1,5 @@
 # SunPharma
-Initial Project Sun Pharma neuro Clinic
+Sun Pharma neuro Clinic Startup Application.
 
 # Splash Screen
 The App Contains Splash Screen.
