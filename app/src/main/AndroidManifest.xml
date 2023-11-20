@@ -15,9 +15,6 @@
         android:theme="@style/Theme.SunPharmaAdmin"
         tools:targetApi="31">
         <activity
-            android:name=".OtpVerificationActivity"
-            android:exported="false" />
-        <activity
             android:name=".RegisterActivity"
             android:exported="false" />
         <activity

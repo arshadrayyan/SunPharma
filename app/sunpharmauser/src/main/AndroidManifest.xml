@@ -11,9 +11,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SunPharmaAdmin">
         <activity
-            android:name=".OtpVerificationActivityUser"
-            android:exported="false" />
-        <activity
             android:name=".RegisterActivityUser"
             android:exported="false" />
         <activity
